@@ -39,6 +39,10 @@ while True:
 
 ```
 
+This is all you need to start "Rendering".
+
+
+
 
 ## ⬇️ Installation
 
