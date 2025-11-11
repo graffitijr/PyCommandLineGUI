@@ -5,6 +5,8 @@
 
 ## 🌟 Highlights
 
+-It is compatitble with popular online interpreters such as programiz
+
 -It's a mix of elements from the command prompt and GUIs
 
 -It is extremely lightweight 
