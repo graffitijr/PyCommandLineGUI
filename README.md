@@ -1,6 +1,6 @@
 # 📦 My Package
 
-![Static Badge](https://img.shields.io/badge/License-MIT-blue) [![Open Issues](https://img.shields.io/github/issues/GraffitiJr/PyCommandLineGUI?style=for-the-badge)](https://github.com/GraffitiJr/PyCommandLineGUI/issues)
+![Static Badge](https://img.shields.io/badge/License-MIT-blue) ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/graffitijr/PyCommandLineGUI)
 
 
 > *Your documentation is a direct reflection of your software, so hold it to the same standards.*
