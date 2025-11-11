@@ -1,4 +1,4 @@
-# 📦 My Package
+# 📦 PyCommandLineGUI
 
 ![Static Badge](https://img.shields.io/badge/License-MIT-blue) ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/graffitijr/PyCommandLineGUI)
 
@@ -9,27 +9,34 @@
 -It is extreamly lightweight
 -Simple to use as ease of use was one of main priorities
 -Allows start to pixel control while still being fully command prompt
--Only one file ~
+-Only one file ~2.2kb
 
 
 ## ℹ️ Overview
 
-A paragraph explaining your work, who you are, and why you made it.
+I wanted to make a free, easy for beginners intro to pixel control in the command prompt. I dont know but this could be used for simple non-GUI games, as it is very lightweight, simple and fast.
 
 
 ### ✍️ Authors
 
-Mention who you are and link to your GitHub or organization's website.
+I'm graffitjr. My Github is https://github.com/graffitijr
 
 
 ## 🚀 Usage
 
-*Show off what your software looks like in action! Try to limit it to one-liners if possible and don't delve into API specifics.*
+The base start that you will most likely use is this:
 
 ```py
->>> import mypackage
->>> mypackage.do_stuff()
-'Oh yeah!'
+gui = PyCommandLineGUI(10, 10, 0)
+# Anything that runs at start, like variables and such
+
+while True:
+    gui.update_screen()
+    
+    # Put any thing that should run with main loop, like controls
+    
+    gui.target_fps(5) # controls fps (if this is not here it will run without limits, which will make your cpu run at 100% so watch out)
+
 ```
 
 
