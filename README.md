@@ -5,10 +5,10 @@
 
 ## 🌟 Highlights
 
--Its a mix of elements from the command prompt and GUIs
--It is extreamly lightweight
--Simple to use as ease of use was one of main priorities
--Allows start to pixel control while still being fully command prompt
+-Its a mix of elements from the command prompt and GUIs \n
+-It is extreamly lightweight \n
+-Simple to use as ease of use was one of main priorities \n
+-Allows start to pixel control while still being fully command prompt \n
 -Only one file ~2.2kb
 
 
