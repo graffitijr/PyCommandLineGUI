@@ -5,13 +5,13 @@
 
 ## 🌟 Highlights
 
--Its a mix of elements from the command prompt and GUIs
+-It's a mix of elements from the command prompt and GUIs
 
--It is extreamly lightweight 
+-It is extremely lightweight 
 
--Simple to use as ease of use was one of main priorities 
+-Simple to use as ease of use was one of my main priorities 
 
--Allows start to pixel control while still being fully command prompt
+-Allows direct pixel control while still being fully command prompt
 
 -Only one file ~2.2kb
 
@@ -37,7 +37,7 @@ gui = PyCommandLineGUI(10, 10, 0) # The first 2 values are width and height of t
 while True:
     gui.update_screen()
     
-    # Put any thing that should run with main loop, like controls
+    # Put anything that should run with main loop, like controls
     
     gui.target_fps(5) # controls fps (if this is not here it will run without limits, which will make your cpu run at 100% so watch out)
 
@@ -55,22 +55,22 @@ gui.set_pixel(2, 3, 1)
 
 This would set the pixel at 2, 3 to 1.
 
-When running a function from the class that hold the lib (PuCommandLineGUI), you would first put the name you gave it when innitializing it, which we did gui when we did:
+When running a function from the class that hold the lib (PyCommandLineGUI), you would first put the name you gave it when initializing it, which we did gui when we did:
 
 ```py
 gui = PyCommandLineGUI(10, 10, 0)
 ```
 
-Because this is a very simple library, there arent vary many function, just simple pixel commands.
+Because this is a very simple library, there aren’t very many functions, just simple pixel commands.
 
 ### Custom Characters
 
-The default values built in are 0 and 1, which corespond to shaded and filled. The way these values are stored are in intergers, such as 0, 1, 2 and so on. The renderer decodes these with a dictionary that is either given to it, or just the default one. The way to format the dictionary is as such:
+The default values built in are 0 and 1, which correspond to shaded and filled. The way these pixel color values are stored are in integers, such as 0, 1, 2 and so on. The renderer decodes these with a dictionary that is either given to it, or just the default one. The way to format the dictionary is as such:
 
 ```py
 value_dict = {
-    0:" _"
-    1:" #"
+    0:" _",
+    1:" #",
     2:" &"
 }
 ```
@@ -81,7 +81,13 @@ The way to give this for the program to reference is with the set_levels() funct
 
 ### Console Clear Error
 
-Some consoles dont allow the main clear type, and instead print a character of a box with an X. The way to get around this is using the fallback option, but this does makit it flicker/give a sliding effect and is not as good as the main one.
+Some consoles dont allow the main clear type, and instead print a character of a box with an X. The way to get around this is using the fallback option, but this may cause flickering or a sliding effect and is not as good as the main one.
+
+### Recommended Extras
+
+PyCommandLineGUI doesn't have any built in input library, my recommendation is the "keyboard" library https://pypi.org/project/keyboard/
+
+It is a very simple way in my opinion to get input, although you may have to work with threads but I'm not sure.
 
 ## ⬇️ Installation
 
