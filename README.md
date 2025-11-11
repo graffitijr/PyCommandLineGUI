@@ -45,8 +45,21 @@ while True:
 
 This is all you need to start "Rendering".
 
-The screen works with a pixel based system, where it goes 0, 0 to width - 1, height - 1, which means that you work with pixels as they you would with like graphs, but the y value goes from top to bottom rather than bottom to top. 
+The screen works with a pixel based system, where it goes 0, 0 to width - 1, height - 1, which means that you work with pixels as they you would with graphs, but the y value goes from top to bottom rather than bottom to top. 
 
+To set a pixel you would use the set_pixel command, in practice that would look like this:
+
+```py
+gui.set_pixel(2, 3, 1)
+```
+
+This would set the pixel at 2, 3 to 1.
+
+When running a function from the class that hold the lib (PuCommandLineGUI), you would first put the name you gave it when innitializing it, which we did gui when we did:
+
+```py
+gui = PyCommandLineGUI(10, 10, 0)
+```
 
 ## ⬇️ Installation
 
