@@ -1,6 +1,6 @@
 # 📦 My Package
 
-(add your badges here)
+https://img.shields.io/badge/licence
 
 > *Your documentation is a direct reflection of your software, so hold it to the same standards.*
 
