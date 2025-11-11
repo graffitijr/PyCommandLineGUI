@@ -21,7 +21,7 @@
 I wanted to make a free, easy for beginners intro to pixel control in the command prompt. I dont know but this could be used for simple non-GUI games, as it is very lightweight, simple and fast.
 
 
-### ✍️ Authors
+### 👨‍💻 Creator
 
 I'm graffitjr. My Github is https://github.com/graffitijr
 
@@ -45,7 +45,7 @@ while True:
 
 This is all you need to start "Rendering".
 
-
+The screen works with a pixel based system, where it goes 0, 0 to width - 1, height - 1, which means that you work with pixels as they you would with like graphs, but the y value goes from top to bottom rather than bottom to top. 
 
 
 ## ⬇️ Installation
