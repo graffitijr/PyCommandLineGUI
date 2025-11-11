@@ -79,35 +79,25 @@ The values that you set the pixel to will be decoded to these characters to be p
 
 The way to give this for the program to reference is with the set_levels() function.
 
-### Every Function
+### Console Clear Error
 
-set_levels(levels: dict)
-
-Define how each value in the screen is displayed.
-
-Parameters:
-
-levels — dictionary mapping pixel values to strings
-
-Example: {0: "░░ ", 1: "██ "}
-
-Example:
+Some consoles dont allow the main clear type, and instead print a character of a box with an X. The way to get around this is using the fallback option, but this does makit it flicker/give a sliding effect and is not as good as the main one.
 
 ## ⬇️ Installation
 
-Simple, understandable installation instructions!
+Minimum Python: 3.6
 
-```bash
-pip install my-package
+Install by downloading and moving PyCommandLineGUI.py to your python project folder.
+
+At the top of your main python script, add:
+
+```py
+import PyCommandLineGUI
 ```
 
-And be sure to specify any other minimum requirements like Python versions or operating systems.
-
-*You may be inclined to add development instructions here, don't.*
+Another option is to make your script right in the file, which isnt as organized, but will work.
 
 
 ## 💭 Feedback and Contributing
 
-Add a link to the Discussions tab in your repo and invite users to open issues for bugs/feature requests.
-
-This is also a great place to invite others to contribute in any ways that make sense for your project. Point people to your DEVELOPMENT and/or CONTRIBUTING guides if you have them.
+If you find any bugs or want any features, I would love to hear them and no ideas are bad.
