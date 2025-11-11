@@ -3,14 +3,13 @@
 ![Static Badge](https://img.shields.io/badge/License-MIT-blue) ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/graffitijr/PyCommandLineGUI)
 
 
-> *Your documentation is a direct reflection of your software, so hold it to the same standards.*
-
-
 ## 🌟 Highlights
 
-- Some functionality made easy!
-- This problem handled
-- etc.
+-Its a mix of elements from the command prompt and GUIs
+-It is extreamly lightweight
+-Simple to use as ease of use was one of main priorities
+-Allows start to pixel control while still being fully command prompt
+-Only one file ~
 
 
 ## ℹ️ Overview
