@@ -81,6 +81,8 @@ The values that you set the pixel to will be decoded to these characters to be p
 
 The way to give this for the program to reference is with the set_levels() function.
 
+NOTE: v1.1.0 allows you to avoid working with the translation dictionary as it is done for you, but for more control, it is still useful.
+
 ### Console Clear Error
 
 Some consoles dont allow the main clear type, and instead print a character of a box with an X. The way to get around this is using the fallback option, but this may cause flickering or a sliding effect and is not as good as the main one.
