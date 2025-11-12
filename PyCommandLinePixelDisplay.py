@@ -11,7 +11,7 @@ class PyCommandLinePixelDisplay:
         self.levels = {0:"░░", 1:"██"}
         self.clear_type = "fallback"
         self.fallback_amount = 50
-        self.pixel_seperation = " "
+        self.pixel_separation = " "
 
         for i in range(self.height):
             current_row = []
@@ -83,4 +83,5 @@ class PyCommandLinePixelDisplay:
 
     def target_fps(self, fps: float = 10.0):
         time.sleep(1.0/fps)
+
 
