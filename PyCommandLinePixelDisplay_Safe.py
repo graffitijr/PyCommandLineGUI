@@ -1,15 +1,16 @@
-__version__ = 1.0.0
+__version__ = "1.1.0"
 
 import time
 
-class PyCommandLinePixelDisplaySafe:
+class PyCommandLinePixelDisplay:
     def __init__(self, width: int, height: int, default_background_value: int = 0):
         self.width = width
         self.height = height
         self.screen = []
-        self.levels = {0:"░░ ", 1:"██ "}
+        self.levels = {0:"░░", 1:"██"}
         self.clear_type = "fallback"
         self.fallback_amount = 50
+        self.pixel_seperation = " "
 
         for i in range(self.height):
             current_row = []
@@ -26,16 +27,29 @@ class PyCommandLinePixelDisplaySafe:
             current_row = ""
             for j in range(self.width):
                 try:
-                    current_row += self.levels[self.screen[i][j]]
+                    current_row += self.levels[self.screen[i][j]] + self.pixel_seperation
                 except KeyError:
                     print(f"error: Value at {j},{i} is {self.screen[i][j]}: which is not defined")
             print(current_row)
 
-    def set_pixel(self, x: int, y: int, value: int):
-        self.screen[y][x] = value
+    def set_pixel(self, x: int, y: int, value):
+        if isinstance(value, int):
+            self.screen[y][x] = value
+        elif isinstance(value, str):
+            for k in range(len(self.levels)):
+                if self.levels[k] == value:
+                    self.screen[y][x] = k
+                    return
+            new_spot = len(self.levels)
+            
+            self.levels[new_spot] = value
+            self.screen[y][x] = new_spot
 
-    def get_pixel(self, x: int, y: int):
-        return self.screen[y][x]
+    def get_pixel(self, x: int, y: int, return_in_int: bool = False):
+        if return_in_int == True:
+            return self.screen[y][x]
+        else:
+            return self.levels[self.screen[y][x]]
 
     def clear_fallback(self, amount: int = 50):
         print("\n" * amount)
@@ -62,5 +76,4 @@ class PyCommandLinePixelDisplaySafe:
 
     def target_fps(self, fps: float = 10.0):
         time.sleep(1.0/fps)
-
 
