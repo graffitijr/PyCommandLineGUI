@@ -89,9 +89,16 @@ Some consoles dont allow the main clear type, and instead print a character of a
 
 ### Recommended Extras
 
-PyCommandLinePixelDisplay doesn't have any built in input library, my recommendation is the "keyboard" library https://pypi.org/project/keyboard/
+PyCommandLinePixelDisplay doesn't yet have any built in input library but one is in the works, my recommendation is the "keyboard" library https://pypi.org/project/keyboard/
 
-It is a very simple way in my opinion to get input, although you may have to work with threads but I'm not sure.
+It is a very simple way in my opinion to get input. An example that would work well with PyCommandLinePixelDisplay is the following:
+
+```py
+import keyboard
+
+if keyboard.is_pressed("a"):
+    do_something()
+```
 
 ## ⬇️ Installation
 
